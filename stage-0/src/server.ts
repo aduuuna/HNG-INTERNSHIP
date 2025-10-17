@@ -10,21 +10,21 @@ app.get("/me", async (req, res) => {
     const data = await response.json();
 
     const result = {
-      "status" : "sucess",
+      "status" : "success",
       "user" : {
         "email": "owusujoyansah@gmail.com",
         "name": "Joy Owusu Ansah",
-        "stack": "Backend development",
+        "stack": "Node.js/Express",
       },
-      "timesatmp": new Date().toISOString(),
+      "timestamp": new Date().toISOString(),
       "fact": data.fact,
     };
 
     res.json(result);
 
   } catch(error) {
-    console.error("There was an error fecthing cat fact:", error);
-    res.status(500).json({message: "Something went wrong"});
+    console.error("There was an error fetching cat fact:", error);
+    res.status(500).json({status: "error", message: "Something went wrong"});
   }
 });
 

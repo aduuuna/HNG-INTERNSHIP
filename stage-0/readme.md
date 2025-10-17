@@ -16,7 +16,7 @@ This validates my ability to:
 1. **Clone the repository**
 
 ```
- git clone (will update this later after my first commit).
+ git clone `https://github.com/aduuuna/HNG-INTERNSHIP/tree/main/stage-0`.
  git cd your-repo/stage-0
 
 ```
